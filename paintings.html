@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffa | Paintings</title>
+  <style>
+    body {
+      margin: 40px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #111;
+      background: #fff;
+    }
+    .nav {
+      margin-bottom: 50px;
+    }
+    .nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 300;
+    }
+    .grid {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      max-width: 1100px;
+      margin: auto;
+    }
+    .painting img {
+      width: 100%;
+      height: auto;
+    }
+    .painting h2 {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 8px 0 4px;
+    }
+    .painting p {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 8px;
+    }
+    .painting a.buy {
+      font-size: 14px;
+      color: #111;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="bio.html">About</a>
+  </div>
+
+  <div class="grid">
+
+    <!-- Painting 1 -->
+    <div class="painting">
+      <img src="images/painting1.jpg" alt="Painting 1" />
+      <h2>Painting Title 1</h2>
+      <p>Oil on canvas – 60 × 80cm – €XXX</p>
+      <a class="buy" href="mailto:your@email.com">Purchase</a>
+    </div>
+
+    <!-- Painting 2 -->
+    <div class="painting">
+      <img src="images/painting2.jpg" alt="Painting 2" />
+      <h2>Painting Title 2</h2>
+      <p>Oil on canvas – 50 × 70cm – €XXX</p>
+      <a class="buy" href="mailto:your@email.com">Purchase</a>
+    </div>
+
+    <!-- Painting 3 -->
+    <div class="painting">
+      <img src="images/painting3.jpg" alt="Painting 3" />
+      <h2>Painting Title 3</h2>
+      <p>Oil on canvas – 60 × 60cm – SOLD</p>
+      <p style="color:#999;">Sold</p>
+    </div>
+
+    <!-- Painting 4 -->
+    <div class="painting">
+      <img src="images/painting4.jpg" alt="Painting 4" />
+      <h2>Painting Title 4</h2>
+      <p>Oil on canvas – 55 × 75cm – €XXX</p>
+      <a class="buy" href="mailto:your@email.com">Purchase</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
