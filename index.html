@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saffa — Art</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffa — Original Oil Paintings</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,89 +12,89 @@
 
   <style>
     :root {
-      --bg: #fafafa;
-      --text: #1a1a1a;
-      --muted: #666;
+      --bg: #fff;
+      --text: #111;
+      --accent: #000;
+      --muted: #555;
     }
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
-      font-family: 'Inter', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
       text-align: center;
-      padding: 80px 20px;
-      max-width: 700px;
-      width: 100%;
+      padding: 60px 20px;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
+      font-size: clamp(44px, 8vw, 64px);
       font-weight: 300;
-      font-size: clamp(36px, 6vw, 52px);
       margin-bottom: 16px;
+      line-height: 1.2;
       letter-spacing: 1px;
     }
 
     p {
-      font-weight: 300;
+      font-size: clamp(16px, 2.5vw, 18px);
       color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 48px;
-      font-size: clamp(15px, 2.5vw, 17px);
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
     }
 
     nav {
+      margin-top: 24px;
       display: flex;
       justify-content: center;
-      gap: 32px;
+      gap: 28px;
       flex-wrap: wrap;
     }
 
     nav a {
       text-decoration: none;
       font-size: 14px;
-      letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: var(--text);
-      padding-bottom: 4px;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.3s ease;
+      font-weight: 400;
+      color: var(--accent);
+      padding: 8px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
     }
 
     nav a:hover {
-      border-color: var(--text);
+      background: var(--accent);
+      color: #fff;
     }
 
     @media (max-width: 480px) {
-      nav {
-        gap: 20px;
+      nav a {
+        font-size: 12px;
+        padding: 6px 12px;
       }
     }
   </style>
 </head>
+
 <body>
-
-  <div class="container">
+  <header>
     <h1>Saffa</h1>
-    <p>Original oil paintings exploring calm, light, and emotional landscapes.</p>
+    <p>Original oil paintings exploring calm, light, and emotional landscapes. Discover the collection below or learn more about me and my practice.</p>
+  </header>
 
-    <nav>
-      <a href="paintings.html">Paintings</a>
-      <a href="bio.html">About</a>
-    </nav>
-  </div>
-
+  <nav>
+    <a href="paintings.html">View Paintings</a>
+    <a href="bio.html">About the Artist</a>
+  </nav>
 </body>
 </html>
+
