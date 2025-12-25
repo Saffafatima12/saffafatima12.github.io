@@ -109,4 +109,87 @@
 
     .painting-card p {
       font-size: 14px;
-      color: var(-
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .painting-card a {
+      font-size: 14px;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 2px;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Mobile tuning */
+    @media (max-width: 480px) {
+      .grid {
+        gap: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bio.html">About</a>
+  </nav>
+
+  <h1>Paintings</h1>
+  <p class="description">Original oil paintings</p>
+
+  <div class="grid">
+
+    <!-- Painting 1 -->
+    <div class="painting-card">
+      <div class="painting-img">
+        <img src="images/painting1.jpg" alt="Painting Title 1">
+      </div>
+      <h2>Painting Title 1</h2>
+      <p>Oil on canvas · 60 × 80 cm · €XXX</p>
+      <a href="mailto:your@email.com">Inquire</a>
+    </div>
+
+    <!-- Painting 2 -->
+    <div class="painting-card">
+      <div class="painting-img">
+        <img src="images/painting2.jpg" alt="Painting Title 2">
+      </div>
+      <h2>Painting Title 2</h2>
+      <p>Oil on canvas · 50 × 70 cm · €XXX</p>
+      <a href="mailto:your@email.com">Inquire</a>
+    </div>
+
+    <!-- Painting 3 -->
+    <div class="painting-card">
+      <div class="painting-img">
+        <img src="images/painting3.jpg" alt="Painting Title 3">
+      </div>
+      <h2>Painting Title 3</h2>
+      <p>Oil on canvas · 60 × 60 cm · SOLD</p>
+    </div>
+
+    <!-- Painting 4 -->
+    <div class="painting-card">
+      <div class="painting-img">
+        <img src="images/painting4.jpg" alt="Painting Title 4">
+      </div>
+      <h2>Painting Title 4</h2>
+      <p>Oil on canvas · 55 × 75 cm · €XXX</p>
+      <a href="mailto:your@email.com">Inquire</a>
+    </div>
+
+  </div>
+
+  <footer>© 2025 Saffa</footer>
+
+</body>
+</html>
