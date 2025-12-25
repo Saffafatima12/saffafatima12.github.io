@@ -13,10 +13,9 @@
 
   <style>
     :root {
-      --bg: #fff;
-      --text: #111;
-      --muted: #555;
-      --border: #eee;
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #555555;
     }
 
     * {
@@ -29,30 +28,30 @@
       font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
-      padding: 40px 20px;
+      padding: 40px 20px 80px;
       text-align: center;
     }
 
+    /* Navigation */
     nav {
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     nav a {
-      margin: 0 20px;
+      margin: 0 18px;
       text-decoration: none;
       font-size: 14px;
-      font-weight: 400;
       text-transform: uppercase;
       color: var(--text);
-      padding-bottom: 4px;
       border-bottom: 1px solid transparent;
-      transition: border-color 0.3s;
+      padding-bottom: 3px;
     }
 
     nav a:hover {
       border-color: var(--text);
     }
 
+    /* Heading */
     h1 {
       font-family: 'Playfair Display', serif;
       font-weight: 300;
@@ -60,137 +59,54 @@
       margin-bottom: 10px;
     }
 
-    p.description {
+    .description {
       font-size: 14px;
       color: var(--muted);
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
+    /* Grid */
     .grid {
       display: grid;
-      gap: 60px;
-      max-width: 1300px;
-      margin: auto;
-      justify-content: center;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 70px;
+      max-width: 1300px;
+      margin: 0 auto;
     }
 
+    /* Painting card — intentionally invisible */
     .painting-card {
-      border: 1px solid var(--border);
-      padding: 12px;
-      background: #fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      padding: 0;
     }
 
-    .painting-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
-    }
-
+    /* Image container */
     .painting-img {
       width: 100%;
-      height: 0;
-      padding-bottom: 100%;
-      position: relative;
+      aspect-ratio: 1 / 1;
       overflow: hidden;
-      background: #f9f9f9;
-      margin-bottom: 18px;
+      background: transparent;
+      margin-bottom: 16px;
     }
 
+    /* Image — cropped to fill box */
     .painting-img img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
+      width: 100%;
       height: 100%;
-      transform: translate(-50%, -50%);
+      object-fit: cover;
+      display: block;
+      border: none;
+      outline: none;
     }
 
+    /* Text */
     .painting-card h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 20px;
       font-weight: 300;
+      font-size: 20px;
       margin-bottom: 6px;
     }
 
     .painting-card p {
-      font-size: 15px;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    .painting-card a {
-      font-size: 15px;
-      text-decoration: none;
-      color: var(--text);
-      border-bottom: 1px solid var(--text);
-      padding-bottom: 2px;
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-  </style>
-</head>
-
-<body>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="bio.html">About</a>
-  </nav>
-
-  <h1>Paintings</h1>
-  <p class="description">Click a painting to inquire or purchase.</p>
-
-  <div class="grid">
-
-    <!-- Painting 1 -->
-    <div class="painting-card">
-      <div class="painting-img">
-        <img src="images/painting1.jpg" alt="Painting Title 1">
-      </div>
-      <h2>Painting Title 1</h2>
-      <p>Oil on canvas · 60 × 80 cm · €XXX</p>
-      <a href="mailto:your@email.com">Inquire</a>
-    </div>
-
-    <!-- Painting 2 -->
-    <div class="painting-card">
-      <div class="painting-img">
-        <img src="images/painting2.jpg" alt="Painting Title 2">
-      </div>
-      <h2>Painting Title 2</h2>
-      <p>Oil on canvas · 50 × 70 cm · €XXX</p>
-      <a href="mailto:your@email.com">Inquire</a>
-    </div>
-
-    <!-- Painting 3 -->
-    <div class="painting-card">
-      <div class="painting-img">
-        <img src="images/painting3.jpg" alt="Painting Title 3">
-      </div>
-      <h2>Painting Title 3</h2>
-      <p>Oil on canvas · 60 × 60 cm · SOLD</p>
-    </div>
-
-    <!-- Painting 4 -->
-    <div class="painting-card">
-      <div class="painting-img">
-        <img src="images/painting4.jpg" alt="Painting Title 4">
-      </div>
-      <h2>Painting Title 4</h2>
-      <p>Oil on canvas · 55 × 75 cm · €XXX</p>
-      <a href="mailto:your@email.com">Inquire</a>
-    </div>
-
-  </div>
-
-  <footer>© 2025 Saffa</footer>
-
-</body>
-</html>
-
-
+      font-size: 14px;
+      color: var(-
